@@ -16,4 +16,8 @@ function addTodo() {
   todoList.push(todoObject);
 }
 
+function doneTodo(todoId) {
+  const selectedTodoIndex = todoList.findIndex(todo => todo.id === todoId);
+  todoList[selectedTodoIndex].isDone = true;
+}
 
